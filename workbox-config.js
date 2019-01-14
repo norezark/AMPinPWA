@@ -4,7 +4,6 @@ module.exports = {
       "**/*.{png,html,json,js}"
     ],
     "swDest": "sw.js",
-    // 以下を手動で追加
     "runtimeCaching": [{
       urlPattern: new RegExp('^https://cdn.ampproject.org'),
       handler: 'staleWhileRevalidate',
